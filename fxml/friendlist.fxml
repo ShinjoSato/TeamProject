@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+
+<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/friendlist.css">
+	<VBox styleClass="title" alignment="CENTER">
+		<Label text="My Friend"/>
+	</VBox>
+	<VBox styleClass="list">
+		<ListView fx:id="myListView" layoutX="14.0" layoutY="100.0" prefHeight="600.0" prefWidth="100.0">
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/shinjo.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Shinjo Sato"/>
+			</HBox>
+
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/nejat.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Saba Nejat"/>
+			</HBox>
+
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/yem.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Yem Yem"/>
+			</HBox>
+
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/chen.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Yi Ming Chen"/>
+			</HBox>
+
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/sun.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Chenghan Sun"/>
+			</HBox>
+
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/shinjo.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Shinjo Sato"/>
+			</HBox>
+
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/nejat.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Saba Nejat"/>
+			</HBox>
+
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/yem.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Yem Yem"/>
+			</HBox>
+
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/chen.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Yi Ming Chen"/>
+			</HBox>
+
+			<HBox>
+				<ImageView fitHeight="50.0" fitWidth="50.0">    
+				   <image>
+				      <Image url="@/images/sun.jpg"/>
+				   </image>
+				</ImageView>
+				<Label styleClass="friendName" text="Chenghan Sun"/>
+			</HBox>
+		</ListView>
+	</VBox>
+</VBox>

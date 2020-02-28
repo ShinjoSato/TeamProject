@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+
+<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/chat.css">
+	<VBox styleClass="top">
+		<Label styleClass="userName" text="User Name"/>
+		<HBox alignment="CENTER">
+			<TextField  maxWidth="300.0"/>
+			<Button>
+				<text>search word</text>
+			</Button>
+		</HBox>
+	</VBox>
+
+	<VBox layoutX="14.0" layoutY="100.0" prefHeight="600.0" prefWidth="100.0">
+	</VBox>
+
+	<VBox styleClass="bottom"  layoutX="14.0" layoutY="200.0" prefHeight="300.0" prefWidth="100.0">
+		<HBox alignment="CENTER">
+			<TextArea prefHeight="250.0" prefWidth="400.0" />
+			<Button>
+				<text>:)</text>
+			</Button>
+			<Button>
+				<text>send message</text>
+			</Button>
+		</HBox>
+	</VBox>
+</VBox>

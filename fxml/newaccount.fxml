@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/newaccount.css" alignment="CENTER">
+	<VBox alignment="CENTER">
+		<Label text="e-mail"/>
+		<TextField maxWidth="300.0"/>
+
+		<Label text="user name"/>
+		<TextField maxWidth="300.0"/>
+
+		<Label text="password"/>
+		<TextField maxWidth="300.0"/>
+
+
+		<Button text="Create"/>
+	</VBox>
+</VBox>

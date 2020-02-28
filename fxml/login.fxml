@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+
+<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/login.css"  alignment="CENTER">
+	<VBox alignment="CENTER">
+		<ImageView fitHeight="224.0" fitWidth="290.0">    
+		   <image>
+		      <Image url="@/images/uob_logo1.jpg"/>
+		   </image>
+		</ImageView>
+
+		<Label text="User name"/>
+		<TextField  maxWidth="300.0"/>
+
+		<Label text="Password"/>
+		<TextField maxWidth="300.0"/>
+
+
+		<Button styleClass="login" text="Create a new Account."/>
+
+		<Button text="Sign In"/>
+
+		<Button text="Forget your password?"/>
+	</VBox>
+</VBox>

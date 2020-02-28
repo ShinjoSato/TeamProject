@@ -1,0 +1,11 @@
+.title {
+	-fx-background-color: "indianred";
+}
+
+.title Label {
+	-fx-font-size: 45pt;
+}
+
+.list .friendName {
+	-fx-font-size: 20pt;
+}
