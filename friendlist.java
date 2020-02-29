@@ -6,6 +6,11 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import java.io.File;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.text.Text;
+import javafx.scene.control.TextField;
  
 public class friendlist extends Application
 {
@@ -26,5 +31,10 @@ public class friendlist extends Application
         primaryStage.setScene(scene);
         primaryStage.setTitle("friend list");
         primaryStage.show();
+    }
+
+    @FXML
+    protected void selectFriend(ActionEvent event) {
+        System.out.println("click your friend");
     }
 }

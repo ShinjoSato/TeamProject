@@ -6,6 +6,15 @@
 	-fx-font-size: 45pt;
 }
 
-.list .friendName {
+.friendData {
 	-fx-font-size: 20pt;
+}
+
+.friendData:hover {
+	-fx-text-fill: red;
+	-fx-background-color: #E8E7E7;
+}
+
+.friendData Label:hover {
+	-fx-text-fill: red;
 }

@@ -7,6 +7,11 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import java.io.File;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.text.Text;
+import javafx.scene.control.TextField;
+
 public class NewAccount extends Application
 {
     public static void main(String[] args) {
@@ -26,5 +31,13 @@ public class NewAccount extends Application
         primaryStage.setScene(scene);
         primaryStage.setTitle("create new account");
         primaryStage.show();
+    }
+
+    @FXML
+    public TextField email, username, password;
+
+    @FXML
+    protected void createAccount(ActionEvent event) {
+        System.out.println(email.getText()+", "+username.getText()+", "+password.getText());
     }
 }

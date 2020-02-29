@@ -6,6 +6,12 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import java.io.File;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.text.Text;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
  
 public class chat extends Application
 {
@@ -16,15 +22,35 @@ public class chat extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     { 
-        URL location = getClass().getResource("/fxml/chat.fxml");
-        FXMLLoader fxmlLoader = new FXMLLoader(location);
-         
-        Pane root = (Pane)fxmlLoader.load();
+        Pane root = FXMLLoader.load(getClass().getResource("/fxml/chat.fxml"));
          
         Scene scene = new Scene(root, 450, 600);
          
         primaryStage.setScene(scene);
         primaryStage.setTitle("chat view");
         primaryStage.show();
+    }
+
+    @FXML
+    public TextArea message;
+
+    @FXML
+    public TextField keyword;
+
+    @FXML
+    protected void sendMessage(ActionEvent event) {
+        System.out.println(message.getText());
+        message.setText("");
+    }
+
+    @FXML
+    protected void searchWord(ActionEvent event) {
+        System.out.println(keyword.getText());
+        keyword.setText("");
+    }
+
+    @FXML
+    protected void pushEmoji(ActionEvent event) {
+        System.out.println(":)");
     }
 }

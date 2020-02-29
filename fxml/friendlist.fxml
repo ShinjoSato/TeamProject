@@ -5,101 +5,132 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.geometry.Insets?>
 
-<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/friendlist.css">
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" fx:controller="friendlist" stylesheets="@/css/friendlist.css">
 	<VBox styleClass="title" alignment="CENTER">
 		<Label text="My Friend"/>
 	</VBox>
 	<VBox styleClass="list">
 		<ListView fx:id="myListView" layoutX="14.0" layoutY="100.0" prefHeight="600.0" prefWidth="100.0">
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/shinjo.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Shinjo Sato"/>
-			</HBox>
 
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/nejat.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Saba Nejat"/>
-			</HBox>
+			<Button styleClass="friendData" onAction="#selectFriend">
+				<text>Shinjo Sato</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/shinjo.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
 
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/yem.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Yem Yem"/>
-			</HBox>
+		    <Button styleClass="friendData" onAction="#selectFriend">
+				<text>Saba Nejat</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/nejat.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
 
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/chen.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Yi Ming Chen"/>
-			</HBox>
+		    <Button styleClass="friendData" onAction="#selectFriend">
+				<text>Yem Yem</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/yem.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
 
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/sun.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Chenghan Sun"/>
-			</HBox>
+		    <Button styleClass="friendData" onAction="#selectFriend">
+				<text>Yi Ming Chen</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/chen.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
 
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/shinjo.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Shinjo Sato"/>
-			</HBox>
+		    <Button styleClass="friendData" onAction="#selectFriend">
+				<text>Chenghan Sun</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/sun.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
 
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/nejat.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Saba Nejat"/>
-			</HBox>
+		    
+			<Button styleClass="friendData" onAction="#selectFriend">
+				<text>Shinjo Sato</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/shinjo.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
 
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/yem.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Yem Yem"/>
-			</HBox>
+		    <Button styleClass="friendData" onAction="#selectFriend">
+				<text>Saba Nejat</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/nejat.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
 
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/chen.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Yi Ming Chen"/>
-			</HBox>
+		    <Button styleClass="friendData" onAction="#selectFriend">
+				<text>Yem Yem</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/yem.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
 
-			<HBox>
-				<ImageView fitHeight="50.0" fitWidth="50.0">    
-				   <image>
-				      <Image url="@/images/sun.jpg"/>
-				   </image>
-				</ImageView>
-				<Label styleClass="friendName" text="Chenghan Sun"/>
-			</HBox>
+		    <Button styleClass="friendData" onAction="#selectFriend">
+				<text>Yi Ming Chen</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/chen.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
+
+		    <Button styleClass="friendData" onAction="#selectFriend">
+				<text>Chenghan Sun</text>
+			    <graphic>
+			       	<ImageView fitHeight="50.0" fitWidth="50.0">
+			          	<image>
+			            	<Image url="@/images/sun.jpg" />
+			          	</image>
+			        </ImageView>
+			    </graphic>
+		    </Button>
+
 		</ListView>
 	</VBox>
 </VBox>

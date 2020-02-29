@@ -5,14 +5,12 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.geometry.Insets?>
 
-<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/chat.css">
+<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/chat.css" fx:controller="chat">
 	<VBox styleClass="top">
 		<Label styleClass="userName" text="User Name"/>
 		<HBox alignment="CENTER">
-			<TextField  maxWidth="300.0"/>
-			<Button>
-				<text>search word</text>
-			</Button>
+			<TextField fx:id="keyword" maxWidth="300.0"/>
+			<Button text="search word" onAction="#searchWord"/>
 		</HBox>
 	</VBox>
 
@@ -21,13 +19,9 @@
 
 	<VBox styleClass="bottom"  layoutX="14.0" layoutY="200.0" prefHeight="300.0" prefWidth="100.0">
 		<HBox alignment="CENTER">
-			<TextArea prefHeight="250.0" prefWidth="400.0" />
-			<Button>
-				<text>:)</text>
-			</Button>
-			<Button>
-				<text>send message</text>
-			</Button>
+			<TextArea fx:id="message" prefHeight="250.0" prefWidth="400.0" />
+			<Button text=":)" onAction="#pushEmoji"/>
+			<Button text="send message" onAction="#sendMessage"/>
 		</HBox>
 	</VBox>
 </VBox>
