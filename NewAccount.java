@@ -12,8 +12,9 @@ import javafx.fxml.FXML;
 import javafx.scene.text.Text;
 import javafx.scene.control.TextField;
 
-public class NewAccount extends Application
-{
+public class NewAccount extends Application{
+    private static Stage primaryStage;
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -21,16 +22,20 @@ public class NewAccount extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        URL location = getClass().getResource("/fxml/newaccount.fxml");
+        /*this.primaryStage = primaryStage;
+        makeScene("/fxml/newaccount.fxml", "Create new account");
+        */
+    }
+
+    /*public void makeScene(String fxmlfile, String title) throws Exception {
+        URL location = getClass().getResource(fxmlfile);
         FXMLLoader fxmlLoader = new FXMLLoader(location);
-         
-        Pane root = (Pane)fxmlLoader.load();
-         
-        Scene scene = new Scene(root, 450, 600);
-         
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("create new account");
-        primaryStage.show();
+
+        Scene scene = new Scene((Pane)fxmlLoader.load(), 450, 600);
+        
+        this.primaryStage.setScene(scene);
+        this.primaryStage.setTitle(title);
+        this.primaryStage.show();
     }
 
     @FXML
@@ -40,4 +45,10 @@ public class NewAccount extends Application
     protected void createAccount(ActionEvent event) {
         System.out.println(email.getText()+", "+username.getText()+", "+password.getText());
     }
+
+    @FXML
+    protected void backToLogin(ActionEvent event) throws Exception {
+        System.out.println("Login");
+        makeScene("/fxml/login.fxml", "Login");
+    }*/
 }

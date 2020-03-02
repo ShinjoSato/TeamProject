@@ -10,10 +10,6 @@ java chat
 
 javac *.java
 
-java login
-java NewAccount
-java Forgetting
-java friendlist
-java chat
+java Controller
 
 rm *.class

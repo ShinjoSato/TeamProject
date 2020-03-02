@@ -4,8 +4,11 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import java.io.File;
+import javafx.geometry.Pos;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -31,16 +34,31 @@ public class chat extends Application
         primaryStage.show();
     }
 
-    @FXML
+    /*@FXML
     public TextArea message;
 
     @FXML
     public TextField keyword;
 
     @FXML
+    public VBox talkHistory;
+
+    @FXML
     protected void sendMessage(ActionEvent event) {
-        System.out.println(message.getText());
+        String messageText = message.getText();
+        System.out.println(messageText);
         message.setText("");
+
+        VBox testbox = new VBox();
+        testbox.setStyle("-fx-background-color: blue;");
+        testbox.setAlignment(Pos.CENTER_RIGHT);
+
+        Label test = new Label(messageText);
+        test.setId("yourtalk");
+        test.setStyle("-fx-text-fill: pink;");
+
+        testbox.getChildren().add(test);
+        talkHistory.getChildren().add(testbox);
     }
 
     @FXML
@@ -52,5 +70,6 @@ public class chat extends Application
     @FXML
     protected void pushEmoji(ActionEvent event) {
         System.out.println(":)");
-    }
+    }*/
+    
 }

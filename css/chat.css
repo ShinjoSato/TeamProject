@@ -10,3 +10,7 @@
 .bottom {
 	-fx-background-color: "grey";
 }
+
+#talkHistory VBox {
+	-fx-background-color: "pink";
+}

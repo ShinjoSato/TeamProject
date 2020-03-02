@@ -21,7 +21,7 @@ public class Forgetting extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        URL location = getClass().getResource("/fxml/forgetting.fxml");
+        /*URL location = getClass().getResource("/fxml/forgetting.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(location);
          
         Pane root = (Pane)fxmlLoader.load();
@@ -30,14 +30,14 @@ public class Forgetting extends Application
          
         primaryStage.setScene(scene);
         primaryStage.setTitle("forget your password");
-        primaryStage.show();
+        primaryStage.show();*/
     }
 
-    @FXML
+    /*@FXML
     public TextField username, email;
 
     @FXML
     protected void sendPassword(ActionEvent event) {
         System.out.println(username.getText()+", "+email.getText());
-    }
+    }*/
 }

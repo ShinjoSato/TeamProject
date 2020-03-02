@@ -2,7 +2,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/newaccount.css" fx:controller="NewAccount" alignment="CENTER">
+<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/newaccount.css" fx:controller="Controller" alignment="CENTER">
 	<VBox alignment="CENTER">
 		<Label text="e-mail"/>
 		<TextField fx:id="email" maxWidth="300.0"/>
@@ -14,5 +14,6 @@
 		<TextField fx:id="password" maxWidth="300.0"/>
 
 		<Button onAction="#createAccount" text="Create"/>
+		<Button onAction="#backToLogin" text="back to login"/>
 	</VBox>
 </VBox>

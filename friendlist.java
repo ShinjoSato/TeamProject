@@ -21,7 +21,7 @@ public class friendlist extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        URL location = getClass().getResource("/fxml/friendlist.fxml");
+        /*URL location = getClass().getResource("/fxml/friendlist.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(location);
          
         Pane root = (Pane)fxmlLoader.load();
@@ -30,11 +30,11 @@ public class friendlist extends Application
          
         primaryStage.setScene(scene);
         primaryStage.setTitle("friend list");
-        primaryStage.show();
+        primaryStage.show();*/
     }
 
-    @FXML
+    /*@FXML
     protected void selectFriend(ActionEvent event) {
         System.out.println("click your friend");
-    }
+    }*/
 }

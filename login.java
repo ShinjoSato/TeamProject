@@ -12,28 +12,31 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.text.Text;
  
-public class login extends Application
-{
+public class login extends Application{
+    private static Stage primaryStage;
+
     public static void main(String[] args) {
         launch(args);
     }
      
     @Override
-    public void start(Stage primaryStage) throws Exception
-    {
-        URL location = getClass().getResource("/fxml/login.fxml");
-        FXMLLoader fxmlLoader = new FXMLLoader(location);
-         
-        Pane root = (Pane)fxmlLoader.load();
-         
-        Scene scene = new Scene(root, 450, 600);
-         
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("Login");
-        primaryStage.show();
+    public void start(Stage primaryStage) throws Exception {
+        /*this.primaryStage = primaryStage;
+        makeScene("/fxml/login.fxml", "Login");*/
     }
 
-    @FXML
+    /*public void makeScene(String fxmlfile, String title) throws Exception {
+        URL location = getClass().getResource(fxmlfile);
+        FXMLLoader fxmlLoader = new FXMLLoader(location);
+
+        Scene scene = new Scene((Pane)fxmlLoader.load(), 450, 600);
+        
+        this.primaryStage.setScene(scene);
+        this.primaryStage.setTitle(title);
+        this.primaryStage.show();
+    }*/
+
+    /*@FXML
     public TextField username, password;
 
     @FXML
@@ -42,12 +45,14 @@ public class login extends Application
     }
 
     @FXML
-    protected void createAccount(ActionEvent event){
+    protected void createAccount(ActionEvent event) throws Exception{
         System.out.println("create new account");
+        //makeScene("/fxml/NewAccount.fxml", "create account");
     }
 
     @FXML
-    protected void forgetPassword(ActionEvent event) {
+    protected void forgetPassword(ActionEvent event) throws Exception{
         System.out.println("forget your password?");
-    }
+        makeScene("/fxml/forgetting.fxml", "forget your password?");
+    }*/
 }

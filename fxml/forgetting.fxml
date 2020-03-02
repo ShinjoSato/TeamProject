@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.geometry.Insets?>
 
-<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/forgetting.css" fx:controller="Forgetting" alignment="CENTER">
+<VBox id="body" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/css/forgetting.css" fx:controller="Controller" alignment="CENTER">
 	<VBox alignment="CENTER">
 
 		<Label text="user name"/>
@@ -13,5 +13,6 @@
 		<TextField fx:id="email" maxWidth="300.0"/>
 
 		<Button onAction="#sendPassword" text="get my password"/>
+		<Button onAction="#backToLogin" text="back to login"/>
 	</VBox>
 </VBox>
